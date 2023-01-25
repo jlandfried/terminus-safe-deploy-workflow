@@ -25,6 +25,8 @@ on:
     secrets:
       TERMINUS_DOWNSTREAM_SSH_KEY:
         required: true
+      TERMINUS_MACHINE_TOKEN:
+        required: true
   workflow_dispatch:
     inputs:
       environment_name:
