@@ -22,6 +22,9 @@ on:
     inputs:
       test:
         type: string
+    secrets:
+      TERMINUS_DOWNSTREAM_SSH_KEY:
+        required: true
   workflow_dispatch:
     inputs:
       environment_name:
