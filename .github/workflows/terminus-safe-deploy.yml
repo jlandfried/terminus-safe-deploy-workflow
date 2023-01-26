@@ -17,6 +17,7 @@ env:
   SLACK_URL: ${{ vars.SLACK_URL }}
   SLACK_MESSAGE_CONTEXT_LINK: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
   DEPLOY_MESSAGE: '--deploy-message="${{ inputs.deploy_message }}"'
+run-name: Deploy to ${{ inputs.environment_name }} by @${{ github.actor }}
 on:
   workflow_call:
     inputs:
