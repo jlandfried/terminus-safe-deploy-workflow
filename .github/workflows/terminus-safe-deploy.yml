@@ -37,6 +37,7 @@ on:
           - live
       deploy_message:
         type: string
+        description: Message appears on Pantheon UI for this deploy
       deploy_force:
         type: boolean
         default: false
